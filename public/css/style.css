@@ -14,8 +14,8 @@ body {
   height:100%;
   height:calc(100% - 0px);
   background-color: #002E62;
- /* background-image:url('https://c.stocksy.com/a/RcN300/z0/805779.jpg');
-  background-size:cover;*/
+  background-image:url('../img/bg.jpg');
+  background-size:cover;
 }
 
 .wide img {
