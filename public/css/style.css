@@ -69,3 +69,16 @@ body {
     box-shadow: 0 1px 1px #eee;
 
 }
+
+footer#main {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    font: normal 16px/16px Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+footer#main img{
+    width: 223px;
+}
