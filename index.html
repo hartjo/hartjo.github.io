@@ -1,1 +1,100 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<!-- title -->
+	<title>Jan Rainier Llarenas | Web Developer</title>
+
+	<!-- meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="UTF-8" />
+	<meta name="Developer" content="hartjo.github.io">
+	<meta name="Author" content="Jan Rainier Llarenas">
+
+	<!-- css -->
+	<link rel="shortcut icon" href="public/img/favicon.png">	
+	<link rel="stylesheet" type="text/css" href="public/components/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+
+</head>
+
+<body>
+
+	<div class="navbar navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand navbarcolor" href="#">Brand</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a class="navbarcolor" href="#">Home</a></li>
+					<li><a class="navbarcolor" href="#about">About</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="navbarcolor" href="/">Jan Rainier Llarenas</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+
+	<div class="wide">
+		
+	</div>
+
+	<div class="container">
+		<div class="text-center">
+			<h1>Content</h1>
+		</div>
+		<div class="text-center">
+			<h1>Content</h1>
+		</div>
+		<div class="text-center">
+			<h1>Content</h1>
+		</div>
+		<div class="text-center">
+			<h1>Content</h1>
+		</div>
+		<div class="text-center">
+			<h1>Content</h1>
+		</div>
+		<div class="text-center">
+			<h1>Content</h1>
+		</div>
+		<div class="text-center">
+			<h1>Content</h1>
+		</div>
+	</div><!-- /.container -->
+
+</body>
+
+	<!-- javascript -->
+	<script type="text/javascript" src="public/js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="public/js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="public/components/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" charset="utf-8" async defer>
+		function checkScroll(){
+		    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+		    if($(window).scrollTop() > startY){
+		    	$('.navbar').addClass("scrolled");
+		    	$('.navbarcolor').css({"color":"#555"});
+		    }else{
+		    	$('.navbar').removeClass("scrolled");
+		    	$('.navbarcolor').css({"color":"#FFF"});
+		    }
+		}
+
+		if($('.navbar').length > 0){
+			$(window).on("scroll load resize", function(){
+				checkScroll();
+			});
+		}
+	</script>
+</html>
